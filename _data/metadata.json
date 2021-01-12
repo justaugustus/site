@@ -1,8 +1,8 @@
 {
-  "title": "Title of the website. Update me.",
-  "url": "https://update-me.com",
-  "domain": "update-me.com",
-  "description": "Description of the website. Update me.",
+  "title": "Stephen Augustus",
+  "url": "https://just.auggie.dev",
+  "domain": "just.auggie.dev",
+  "description": "Friendly neighborhood Kubernetes guy at VMware. Previously Red Hat and CoreOS. Proud geek. Black engineer. Made in NYC.",
   "genre": "Insert a schema.org genre",
   "googleAnalyticsId": "GA ID. Update me",
   "sendWebVitals": false,
@@ -10,17 +10,17 @@
     "subtitle": "Subtitle. Update me.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "id": "https://update-me.com"
+    "id": "https://just.auggie.dev"
   },
   "jsonfeed": {
     "path": "/feed/feed.json",
-    "url": "https://update-me.com/feed/feed.json"
+    "url": "https://just.auggie.dev/feed/feed.json"
   },
   "author": {
-    "name": "Author Name. Update me.",
-    "twitterHandle": "update_me"
+    "name": "Stephen Augustus",
+    "twitterHandle": "stephenaugustus"
   },
   "publisher": {
-    "name": "Publisher name. Update me."
+    "name": "Stephen Augustus"
   }
 }
