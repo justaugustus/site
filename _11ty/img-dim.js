@@ -25,6 +25,7 @@ const sizeOf = promisify(require("image-size"));
 const blurryPlaceholder = require("./blurry-placeholder");
 const srcset = require("./srcset");
 const path = require("path");
+const { gif2mp4 } = require("./video-gif");
 
 /**
  * Sets `width` and `height` on each image, adds blurry placeholder
@@ -61,22 +62,31 @@ const processImage = async (img, outputPath) => {
   if (dimensions.type == "svg") {
     return;
   }
+  if (dimensions.type == "gif") {
+    const videoSrc = await gif2mp4(src);
+    const video = img.ownerDocument.createElement(
+      /AMP/i.test(img.tagName) ? "amp-video" : "video"
+    );
+    [...img.attributes].map(({ name, value }) => {
+      video.setAttribute(name, value);
+    });
+    video.src = videoSrc;
+    video.setAttribute("autoplay", "");
+    video.setAttribute("muted", "");
+    video.setAttribute("loop", "");
+    if (!video.getAttribute("aria-label")) {
+      video.setAttribute("aria-label", img.getAttribute("alt"));
+      video.removeAttribute("alt");
+    }
+    img.parentElement.replaceChild(video, img);
+    return;
+  }
   if (img.tagName == "IMG") {
     img.setAttribute("decoding", "async");
     img.setAttribute("loading", "lazy");
-    // Contain the intrinsic to the `--main-width` (width of the main article body)
-    // and the aspect ratio times that size. But because images are `max-width: 100%`
-    // use the `min` operator to set the actual dimensions of the image as the
-    // ceiling 🤯.
-    const containSize = `min(var(--main-width), ${
-      dimensions.width
-    }px) min(calc(var(--main-width) * ${
-      dimensions.height / dimensions.width
-    }), ${dimensions.height}px)`;
     img.setAttribute(
       "style",
       `background-size:cover;` +
-        `contain-intrinsic-size: ${containSize};` +
         `background-image:url("${await blurryPlaceholder(src)}")`
     );
     const doc = img.ownerDocument;
