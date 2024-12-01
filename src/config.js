@@ -1,2 +1,2 @@
-export const SITE_TITLE = "blahg[-bsky]";
-export const SITE_DESCRIPTION = "...and it's the same blog template, but there are bluesky comments, so it's not";
+export const SITE_TITLE = "Stephen Augustus";
+export const SITE_DESCRIPTION = "Open Source Engineering";
