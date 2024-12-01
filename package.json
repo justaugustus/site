@@ -1,0 +1,23 @@
+{
+	"name": "@uwu-tools/blahg-bsky",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "npx tinacms dev -c 'astro dev'",
+		"start": "astro dev",
+		"build": "tinacms build && astro build",
+		"preview": "astro preview",
+		"astro": "astro"
+	},
+	"devDependencies": {
+		"@astrojs/rss": "^4.0.9",
+		"@astrojs/sitemap": "^3.2.1",
+		"astro": "^4.16.16",
+		"prettier": "^3.4.1",
+		"prettier-plugin-astro": "^0.14.1"
+	},
+	"dependencies": {
+		"@tinacms/cli": "^1.6.12",
+		"tinacms": "^2.5.0"
+	}
+}
