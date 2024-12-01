@@ -1,6 +1,6 @@
 # Cassidy's blog template
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/d8385221-1dfe-4f13-a26c-6296436f0c48/deploy-status)](https://app.netlify.com/sites/blahg-bsky/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/89ca0414-26fa-420d-a9d3-fb7514b3a562/deploy-status)](https://app.netlify.com/sites/auggie/deploys)
 
 Hello, welcome. This is a blog ("blahg" is the proper spelling for Chicagoans) template. It's built with [Astro](https://astro.build), and uses [TinaCMS](https://tina.io) to edit the content!
 

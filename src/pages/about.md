@@ -1,22 +1,62 @@
-# Welcome to your new blog template!
+Stephen is a Black engineering director and community leader in open source,
+based in New York City.
 
-It extends [cassidoo's](https://cassidoo.co) wonderful [*blahg*](https://github.com/cassidoo/blahg) template with the ability to add comments to posts via Bluesky, which was worked on by [jade0x](https://blog.jade0x.com/post/adding-bluesky-comments-to-your-astro-blog/). Check out [this post](/post/bsky-comments/) to see it in action!
+Most recently, he was Head of Open Source at Cisco, where he founded the Open
+Source Program Office (OSPO) and managed a team of brilliant architects.
 
-The template uses [Astro](https://astro.build/) and [TinaCMS](https://tina.io/).
-You can [clone it on GitHub](https://github.com/uwu-tools/blahg-bsky) to use it for yourself, and see how it works. The GitHub instructions are not completely up-to-date yet, but feel free to file an issue or shoot me a note on [Bluesky](https://bsky.app/profile/auggie.dev)!
+Stephen currently participates in project-level steering committees
+([Kubernetes][k8s], [OpenSSF Scorecard][scorecard], [TODO Group][todo]) and
+helps maintain a few codebases around open source projects you may have heard of.
 
-The tags at the bottom of the page are dynamically generated. The more tags you use, the more tags are added to the list! Posts are simple markdown files.
+Additionally, he serves as an advisor and investor for startups in the open
+source ecosystem.
 
-Enjoy!
+Within the Open Source Security Foundation (OpenSSF), he maintains OpenSSF
+Scorecard, a project that helps assess the security posture of open source
+projects.
 
----
+For [Kubernetes][k8s], Stephen serves as a [Steering Committee][k8s-steering]
+member and a chair of [SIG Release][sig-release].
+He has co-founded transformational elements of the project, including the
+[KEP][enhancements] (Kubernetes Enhancements Proposal) process, the
+[Release Engineering][releng] subproject, and Working Group Naming. He has
+previously served as a chair of both SIG PM and SIG Azure.
 
-## cassidoo is *v cool*
+Across the wider Cloud Native Computing Foundation ([CNCF][cncf]) ecosystem, he
+is a former [TAG Contributor Strategy][contrib-strat] Chair, [Dex][dex]
+maintainer, and Program Chair for [KubeCon / CloudNativeCon][kubecon], the
+cloud native community's flagship conference.
 
-She would *love* if you told her when you do use *blahg*; she loves seeing variations of it!
+Stephen is a [prolific contributor][devstats] to CNCF projects, and is amongst
+the top 100 (as of writing) code/content committers since the inception of the
+foundation.
 
-You should also check out [her newsletter](https://cassidoo.co/newsletter), or her word game [Jumblie](https://jumblie.com/?utm_campaign=blahgtmp&utm_source=github), or her [GitHub profile](https://github.com/cassidoo). Or don't. Follow your dreams.
+In 2020, Stephen co-founded the [Inclusive Naming Initiative][ini], a
+cross-industry group dedicated to helping projects and companies make
+consistent, responsible choices to remove harmful language across codebases,
+standards, and documentation.
 
----
+He has previously held positions at Cisco, VMware (via Heptio), Red Hat, and
+CoreOS. He has also participated in foundation-level governing boards
+([OpenSSF][ossf], [CNCF][cncf], [OpenAPI Initiative][oapi]).
 
-<sub>The site title/description is a nod to the deluxe edition of [Charli xcx's *brat* album](https://en.wikipedia.org/wiki/Brat_(album)) — ***brat and it's the same but there's three more songs so it's not***</sub>
+<!-- FIXME:
+This is a low-effort way to do link verification for Mastodon.
+<!-- markdownlint-disable-next-line MD033 -->
+<a rel="me" href="https://hachyderm.io/@justaugustus"></a>
+
+[cncf]: https://www.cncf.io/
+[contrib-strat]: https://github.com/cncf/tag-contributor-strategy
+[devstats]: https://all.devstats.cncf.io/d/22/prs-authors-table?orgId=1
+[dex]: https://github.com/dexidp/dex
+[enhancements]: https://git.k8s.io/enhancements
+[ini]: https://inclusivenaming.org/
+[k8s]: https://kubernetes.io/
+[k8s-steering]: https://git.k8s.io/steering
+[kubecon]: https://kubecon.io
+[oapi]: https://www.openapis.org/
+[ossf]: https://openssf.org/
+[releng]: https://git.k8s.io/community/sig-release#release-engineering
+[scorecard]: https://github.com/ossf/scorecard
+[sig-release]: https://git.k8s.io/community/sig-release
+[todo]: https://todogroup.org/

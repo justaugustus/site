@@ -11,4 +11,4 @@ blueskyUri: 'at://did:plc:ekcyikfp2mpymgtyzz7wkfuj/app.bsky.feed.post/3lbzgeshvq
 ---
 
 This is a test post which has commenting via Bluesky enabled!
-To learn more about how this was done, check out the [main page](https://blahg-bsky.netlify.app).
+To learn more about how this was done, check out the [`blahg-bsky` template site](https://blahg-bsky.netlify.app).

@@ -1,4 +1,4 @@
-Sitemap: https://blahg-bsky.netlify.app/sitemap-index.xml
+Sitemap: https://auggie.dev/sitemap-index.xml
 
 User-agent: *
 Disallow:
