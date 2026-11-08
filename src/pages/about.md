@@ -52,7 +52,7 @@ and the [OpenAPI Initiative][oapi].
 <a rel="me" href="https://hachyderm.io/@justaugustus"></a>
 
 [allstar]: https://github.com/ossf/allstar
-[bloomberg]: https://www.bloomberg.com/company/values/tech-at-bloomberg/open-source/
+[bloomberg]: https://techatbloomberg.com/opensource
 [cncf]: https://www.cncf.io/
 [contrib-strat]: https://github.com/cncf/tag-contributor-strategy
 [darnit]: https://github.com/darnitdevorg/darnit
