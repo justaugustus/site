@@ -21,12 +21,35 @@ export default defineConfig({
 	schema: {
 		collections: [
 			{
+				label: "Site Settings",
+				name: "settings",
+				path: "src/settings",
+				format: "json",
+				fields: [
+					{
+						type: "string",
+						label: "Site Title",
+						name: "title",
+					},
+					{
+						type: "string",
+						label: "Site subtitle",
+						name: "subtitle",
+					},
+				],
+				ui: {
+					allowedActions: {
+						create: false,
+						delete: false,
+					},
+				},
+			},
+			{
 				name: "post",
 				label: "Posts",
-				path: "src/posts",
+				path: "posts",
 				defaultItem: () => ({
 					title: "New Post",
-					layout: "../layouts/BlogPost.astro",
 					added: new Date(),
 					tags: [],
 				}),
@@ -40,13 +63,6 @@ export default defineConfig({
 					},
 				},
 				fields: [
-					{
-						name: "layout",
-						label: "Layout",
-						type: "string",
-						required: true,
-						searchable: false,
-					},
 					{
 						name: "title",
 						label: "Title",
@@ -101,8 +117,8 @@ export default defineConfig({
 								label: "Personal",
 							},
 							{
-								value: "musings",
-								label: "Musings",
+								value: "projects",
+								label: "Projects",
 							},
 						],
 					},
