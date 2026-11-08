@@ -49,3 +49,6 @@ This site is built on [`blahg`](https://github.com/cassidoo/blahg), a blog
 template by [Cassidy Williams](https://cassidoo.co/), with Bluesky comments
 from [`uwu-tools/blahg-bsky`](https://github.com/uwu-tools/blahg-bsky). The
 template's license is in [`LICENSE`](LICENSE).
+
+To pull in later template changes, see
+[`docs/upstream-sync.md`](docs/upstream-sync.md).
