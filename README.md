@@ -1,73 +1,51 @@
-# Cassidy's blog template
+# auggie.dev
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/89ca0414-26fa-420d-a9d3-fb7514b3a562/deploy-status)](https://app.netlify.com/sites/auggie/deploys)
 
-Hello, welcome. This is a blog ("blahg" is the proper spelling for Chicagoans) template. It's built with [Astro](https://astro.build), and uses [TinaCMS](https://tina.io) to edit the content!
+The source for [auggie.dev](https://auggie.dev), Stephen Augustus's site and
+blog. It's built with [Astro](https://astro.build), edited with
+[TinaCMS](https://tina.io), and deployed on Netlify.
 
-![cover](https://github.com/cassidoo/blahg/assets/1454517/b56ff04f-9499-48e7-be62-d9b422c4287d)
+## Writing
 
-## See the blahg
+- Posts live in `posts/` as Markdown, or can be edited in TinaCMS at
+  `/admin`.
+- The about page is `src/pages/about.md`.
+- The site title and subtitle are in `src/settings/settings.json`.
 
-[blahg-bsky.netlify.app](https://blahg-bsky.netlify.app/)
+### Bluesky comments
 
-## To use the template
+To show Bluesky replies as comments on a post:
 
-- Connect to your chosen hosting provider (see Deploy to Netlify button below if you want to go that route, otherwise use the GitHub template button above and pick a different one)
-- Make an account at [tina.io](https://tina.io/)
-- Add your TinaCMS keys (see below)
-- Update `astro.config.mjs` with your domain
-- Edit `src/settings/settings.json` (or update it in Tina, see below)
-- Set your Twitter creator handle in `src/components/BaseHead.astro` (`twitter:creator` meta tag)
-- Add your URL in line 1 of `public/robots.txt`
-- Add your links in `src/components/Header.astro`
-- Update the intro in `pages/about.md`
-- Edit the images in `public/` (optional)
-- Edit the RSS styles in `public/` (optional)
-- Edit whatever tags you want in `tina/config.js` (optional)
+1. Publish the post and share it on Bluesky.
+1. Open the Bluesky post's single-post view by clicking its timestamp.
+1. Build the URI as `at://<your-DID>/app.bsky.feed.post/<post-id>`.
+1. Set it as the post's "Bluesky Post URI" in TinaCMS (`blueskyUri` in
+   the front matter), then publish.
 
-After this, you can add your content to `posts/` with Markdown files, or with TinaCMS by going to `yoururl.com/admin`!
+## Running locally
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/cassidoo/blahg)
+Use Node 22 (see `.nvmrc`).
 
-## Bluesky comments
+| Command           | Action                                             |
+| :---------------- | :------------------------------------------------- |
+| `npm install`     | Install dependencies                               |
+| `npm run dev`     | Start Astro and TinaCMS at `localhost:4321`        |
+| `npm run build`   | Build TinaCMS and the production site to `./dist/` |
+| `npm run preview` | Preview the build locally                          |
 
-Each time you create a blog post:
+The CMS is at `localhost:4321/admin/index.html`. Building against Tina
+Cloud needs a `.env.development` file with:
 
-- Write and publish your blog post
-- Share it on Bluesky
-- Get the Bluesky post's URI:
-  - Go to your Bluesky post
-  - Click the timestamp to open the single post view
-- Format the URI as: `at://\[your-DID]/app.bsky.feed.post/\[post-id]`
-- Add this URI to your blog post's "Bluesky Post URI" field in TinaCMS
-- Publish your changes
-
-Your blog will now display any Bluesky replies to your post as comments!
-
-And finally, please ping me (via social media, or in a GitHub Issue, or whatever) if you use this template! I would love to see your writing and subscribe to your RSS feed!
-
-## Run it yourself
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                          | Action                                                        |
-| :------------------------------- | :------------------------------------------------------------ |
-| `npm install`                    | Installs dependencies                                         |
-| `npm run dev`                    | Starts local dev server at `localhost:4321`                   |
-| `npx tinacms dev -c 'astro dev'` | Manually run local server if the regular command doesn't work |
-| `npm run build`                  | Build your production site to `./dist/`                       |
-| `npm run preview`                | Preview your build locally, before deploying                  |
-
-You go to `localhost:4321/admin/index.html` to see the CMS and use it. If you want to clone this for yourself, you'll need a `.env.development` file that has the following in it:
-
-```
+```sh
 TINACLIENTID=<from tina.io>
 TINATOKEN=<from tina.io>
 TINASEARCH=<from tina.io>
 ```
 
-If you get a remote GraphQL schema error, chances are you need to update TinaCMS, [details here](https://tina.io/docs/introduction/faq#how-do-i-resolve-the-local-graphql-schema-doesnt-match-the-remote-graphql-schema-errors)!
+## Credits
 
-Note: if you want to edit your RSS feed styles (in `public/rss-styles.xsl`), that does _not_ have hot reloading, so you will have to refresh the page with every change. It seems hard-coded, but that's how XSL styles work (you'll see)!
-
-**Have fun!**
+This site is built on [`blahg`](https://github.com/cassidoo/blahg), a blog
+template by [Cassidy Williams](https://cassidoo.co/), with Bluesky comments
+from [`uwu-tools/blahg-bsky`](https://github.com/uwu-tools/blahg-bsky). The
+template's license is in [`LICENSE`](LICENSE).
