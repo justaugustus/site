@@ -1,6 +1,6 @@
 # Cassidy's blog template
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/eab04209-5f7f-41ed-a8dd-c45a9ebb1834/deploy-status)](https://app.netlify.com/sites/blahg/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/89ca0414-26fa-420d-a9d3-fb7514b3a562/deploy-status)](https://app.netlify.com/sites/auggie/deploys)
 
 Hello, welcome. This is a blog ("blahg" is the proper spelling for Chicagoans) template. It's built with [Astro](https://astro.build), and uses [TinaCMS](https://tina.io) to edit the content!
 
@@ -8,7 +8,7 @@ Hello, welcome. This is a blog ("blahg" is the proper spelling for Chicagoans) t
 
 ## See the blahg
 
-[blahg.netlify.app](https://blahg.netlify.app/)
+[blahg-bsky.netlify.app](https://blahg-bsky.netlify.app/)
 
 ## To use the template
 
@@ -28,6 +28,21 @@ Hello, welcome. This is a blog ("blahg" is the proper spelling for Chicagoans) t
 After this, you can add your content to `posts/` with Markdown files, or with TinaCMS by going to `yoururl.com/admin`!
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/cassidoo/blahg)
+
+## Bluesky comments
+
+Each time you create a blog post:
+
+- Write and publish your blog post
+- Share it on Bluesky
+- Get the Bluesky post's URI:
+  - Go to your Bluesky post
+  - Click the timestamp to open the single post view
+- Format the URI as: `at://\[your-DID]/app.bsky.feed.post/\[post-id]`
+- Add this URI to your blog post's "Bluesky Post URI" field in TinaCMS
+- Publish your changes
+
+Your blog will now display any Bluesky replies to your post as comments!
 
 And finally, please ping me (via social media, or in a GitHub Issue, or whatever) if you use this template! I would love to see your writing and subscribe to your RSS feed!
 
